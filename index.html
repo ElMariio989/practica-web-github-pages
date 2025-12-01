@@ -1,41 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi primera página en la nube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Menú</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f0f8ff;
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
     }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
+    header {
+      background: #3498db;
       color: white;
-      background-color: #3498db;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
     }
-    a:hover {
-      background-color: #2980b9;
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #1abc9c;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #3498db;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>¡Hola desde GitHub Pages!</h1>
-  <p>Esta es mi primera página publicada en la nube 🚀</p>
-  <a href="https://github.com/ElMariio989/practica-web-github-pages" target="_blank">
-    Ver repositorio en GitHub
-  </a>
+  <header>
+    <h1>Mi Página con Menú</h1>
+    <p>Ejemplo de práctica con GitHub Pages</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#curriculum">Currículum</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>Bienvenido a mi página web. Aquí aprenderás cómo usar un menú de navegación sencillo.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <p>Aquí podrías mostrar fotos o imágenes relacionadas con tu proyecto.</p>
+  </section>
+
+  <section id="curriculum">
+    <h2>Currículum</h2>
+    <p>En esta sección puedes poner tu experiencia, estudios y habilidades.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Si quieres comunicarte conmigo, aquí puedes poner tu correo o redes sociales.</p>
+  </section>
+
+  <footer>
+    © 2025 - Creado como práctica de despliegue en GitHub Pages
+  </footer>
 </body>
 </html>
